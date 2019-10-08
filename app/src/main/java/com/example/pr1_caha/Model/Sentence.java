@@ -9,7 +9,6 @@ public class Sentence {
 
     public Sentence(String sentence, ArrayList<Sentence> sentencesList) {
         this.sentence = sentence;
-        sentencesList = new ArrayList<Sentence>();
     }
 
     private void updateSentence(){
