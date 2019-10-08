@@ -5,8 +5,12 @@ import java.util.ArrayList;
 
 public class Sentence {
     private String sentence;
-    private static ArrayList<Sentence> sentenceArrayList( )
+    private static ArrayList<Sentence> SentencesList;
 
+        public Sentence(String sentence, ArrayList<Sentence> sentencesList) {
+            this.sentence = sentence;
+            sentencesList = new ArrayList<Sentence>();
+        }
 
     private void updateSentence(){
     }
