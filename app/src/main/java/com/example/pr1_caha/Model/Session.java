@@ -1,4 +1,3 @@
-package com.example.pr1_caha;
 
 
 public class Session {
