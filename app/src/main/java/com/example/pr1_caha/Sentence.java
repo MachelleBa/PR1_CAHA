@@ -15,8 +15,8 @@ public class Sentence {
         return sentence;
     }
 
-    public String getGallery() {
-        return sentence;
+    public getGallery() {
+        return getGallery();
     }
 
 }
