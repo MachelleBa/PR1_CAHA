@@ -1,4 +1,4 @@
 package com.example.pr1_caha.Model;
 
-public class Session {
+public class Sentence {
 }
