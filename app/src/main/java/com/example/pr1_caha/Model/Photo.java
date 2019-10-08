@@ -1,4 +1,4 @@
-package com.example.pr1_caha;
+package com.example.pr1_caha.Model;
 
 public class Photo {
     private String photoName;
