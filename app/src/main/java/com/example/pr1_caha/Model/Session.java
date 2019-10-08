@@ -8,8 +8,8 @@ public class Session {
     }
 
 
-
-    public User getUserID(int user){
+    //TODO Generate a user ID
+    public User getUserID(){
         return user;
     }
 
