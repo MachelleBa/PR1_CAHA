@@ -13,7 +13,7 @@ public class Ranking {
     }
 
     public void displayRanking(){
-        
+
     }
 
     public void orderRanking(){

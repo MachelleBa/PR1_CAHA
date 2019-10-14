@@ -1,11 +1,18 @@
 package com.example.pr1_caha.Model;
 
-import java.util.function.ToDoubleBiFunction;
+import androidx.appcompat.app.AppCompatActivity;
 
-import static com.example.pr1_caha.Model.Enumerations.photoType.jpeg;
-import static com.example.pr1_caha.Model.Enumerations.photoType.jpg;
+import android.content.Intent;
+import android.graphics.Bitmap;
+import android.os.Bundle;
+import android.provider.MediaStore;
+import android.view.View;
+import android.widget.ImageView;
 
-public class Photo {
+public class Photo extends AppCompatActivity{
+
+    private ImageView mimageView;
+    private static final int REAQUEST_IMAGE_CAPTURE = 101;
     private String photoName;
     private Enumerations photoType;
     private long photoSize;
@@ -53,5 +60,26 @@ public class Photo {
 
     public void sharePhoto(Photo photo){
         // TODO: 8-10-2019 fill in the function
+    }
+
+    public void takePicture(View view)
+    {
+        Intent imageTakeIntent = new Intent (MediaStore.ACTION_IMAGE_CAPTURE);
+
+        if(imageTakeIntent.resolveActivity(getPackageManager())!=null)
+        {
+            startActivityForResult(imageTakeIntent, REAQUEST_IMAGE_CAPTURE);
+        }
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == REAQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK) {
+            Bundle extras = data.getExtras();
+            Bitmap imageBitmap = (Bitmap) extras.get("data");
+            mimageView.setImageBitmap(imageBitmap);
+        }
+
     }
 }

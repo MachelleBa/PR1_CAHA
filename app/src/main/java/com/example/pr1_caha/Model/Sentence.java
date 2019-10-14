@@ -1,4 +1,4 @@
-package com.example.pr1_caha;
+package com.example.pr1_caha.Model;
 
 import java.util.ArrayList;
 
@@ -23,8 +23,8 @@ public class Sentence {
     }
 
     //getting the gallery that is connected to the sentence
-    public getGallery() {
-        return getGallery();
+    public String getGallery() {
+        return null;
     }
 
 }

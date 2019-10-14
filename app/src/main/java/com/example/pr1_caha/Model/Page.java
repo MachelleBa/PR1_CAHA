@@ -2,7 +2,7 @@ package com.example.pr1_caha.Model;
 
 import android.view.Menu;
 
-import com.example.pr1_caha.Sentence;
+import com.example.pr1_caha.Model.Sentence;
 
 import java.util.ArrayList;
 
