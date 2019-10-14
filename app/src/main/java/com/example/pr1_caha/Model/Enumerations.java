@@ -5,5 +5,4 @@ public class Enumerations {
         png, jpg, jpeg
     }
 
-    s
 }
