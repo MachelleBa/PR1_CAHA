@@ -13,25 +13,30 @@ public class Gallery {
         this.photos = photos;
     }
 
-    public void generateGallery(){
-        // TODO:
+    public Gallery(int galleryId, String galleryName){
+        this.galleryId = galleryId;
+        this.galleryName = galleryName;
     }
 
+    public ArrayList<Photo> generateGallery(){
+        return this.photos;
+    }
+
+    //editGallery doesn't have a purpose in life.
+    /*
     public void editGallery(){
-        // TODO:
+
+    }*/
+
+    public void uploadPhoto(Photo photo){
+        this.photos.add(photo);
     }
 
-    public void uploadPhoto(){
-        // TODO:
-    }
-
-    public void displayPhoto(Photo photo){
-        // TODO:
+    public Photo displayPhoto(Photo photo){
+        return photo.getPhoto();
     }
 
     public void deletePhoto(Photo photo, Gallery gallery){
-        // TODO:
+        gallery.photos.remove(photo);
     }
-
-
 }
