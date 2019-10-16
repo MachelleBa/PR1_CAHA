@@ -56,7 +56,7 @@ public class User {
 
     }
 
-    public void changeUserIcon() { //Dit is correct, maar moet eigenlijk even aangepast worden in CD
+    public void changeUserIcon(Photo userIcon) { //Dit is correct, maar moet eigenlijk even aangepast worden in CD
 
 
         this.userIcon = userIcon;
