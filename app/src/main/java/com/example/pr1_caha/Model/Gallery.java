@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Gallery {
     private int galleryId;
     private String galleryName;
-    ArrayList<Photo> photos = new ArrayList<>();
+    private ArrayList<Photo> photos = new ArrayList<>();
 
     public Gallery(int galleryId,String galleryName, ArrayList photos){
         this.galleryId = galleryId;
